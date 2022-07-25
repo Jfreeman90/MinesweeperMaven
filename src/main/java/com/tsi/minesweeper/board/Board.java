@@ -300,7 +300,7 @@ public class Board {
     }
 
     //check for revealed squares and returns how many have been revealed.
-    private int revealedCount(){
+    public int revealedCount(){
         int counter=0;
         for (int i=0; i< this.size; i++){
             for(int j=0; j<this.size; j++) {

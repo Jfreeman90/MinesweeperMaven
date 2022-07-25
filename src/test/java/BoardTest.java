@@ -72,5 +72,12 @@ public class BoardTest {
         gameBoard2.setBombs();
         assertEquals(58, gameBoard2.valueCount(10), "Expected 58 bombs and didnt return 58.");
     }
+
+    @Test
+    public void test_revealedCount(){
+        //create board based of size 10x10 with 15 bombs and 5 flags.
+        Board gameBoard = new Board(10, 15, 5);
+        assertEquals(0,gameBoard.revealedCount(), "Expected 0 revealed squares and did not return 0.");
+    }
 }
 
