@@ -42,8 +42,8 @@ public class Board {
     //put the bombs into the boards.
     public void setBombs(){
         int k =0;
+        Random random = new Random();
         while (k < this.bombs){
-            Random random = new Random();
             int g = random.nextInt(this.size);
             int j = random.nextInt(this.size);
             //System.out.println("co-ordinate(index starting at 0,0 in top left) for bomb: (" +j +" , " + g+" )");
