@@ -52,18 +52,11 @@ public class Main {
         gameBoard.setBombs();
         //set up the hidden board to track how many bombs are near each grid.
         gameBoard.bombCheck();
-        //check the hidden board has been constructed correctly.
-        //gameBoard.printHiddenBoard();
-
         //start timer
         gameBoard.startTimer();
 
-        //print the initial board created with only bombs
-        //gameBoard.printArrayForm();
-
         //game loop while game is in play keep asking player for their new move until game is over.
         while(gameBoard.getGameInPlay()) {
-            //System.out.println(gameBoard.getGameInPlay());
             //current players board
             gameBoard.printPlayerBoard();
             //ask player to enter move
