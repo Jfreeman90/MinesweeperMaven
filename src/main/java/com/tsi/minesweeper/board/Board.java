@@ -27,6 +27,8 @@ public class Board {
             timer++;
         }
     };
+    //new random object
+    Random random = new Random();
 
     //create the board object by choosing the number of bombs you would like
     public Board(int size, int bombs, int flags){
@@ -41,7 +43,6 @@ public class Board {
     //put the bombs into the boards.
     public void setBombs(){
         int k =0;
-        Random random = new Random();
         while (k < this.bombs){
             int g = random.nextInt(this.size);
             int j = random.nextInt(this.size);
